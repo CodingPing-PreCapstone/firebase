@@ -3,7 +3,7 @@ from firebase_admin import credentials, firestore
 from flask import Flask, request, jsonify
 
 # Firebase Admin SDK 초기화
-cred = credentials.Certificate("flightinfo-46895-firebase-adminsdk-c5i7h-fd4b966360")
+cred = credentials.Certificate("flightinfo-46895-firebase-adminsdk-c5i7h-fd4b966360.json")
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
